@@ -13,13 +13,13 @@ export const storeLinks = {
   android: "",
 }
 
-const legal = "https://taras-olef.github.io/chipaa/"
-
+// Páginas legales y de soporte: HTML estático en public/, en el mismo dominio (chipaa.club).
+// Son las URLs que usan las apps y las fichas de App Store y Google Play.
 export const links = {
-  support: legal,
-  privacy: `${legal}privacidad.html`,
-  terms: `${legal}terminos.html`,
-  deleteAccount: `${legal}eliminar-cuenta.html`,
+  support: "/soporte.html",
+  privacy: "/privacidad.html",
+  terms: "/terminos.html",
+  deleteAccount: "/eliminar-cuenta.html",
   contact: "mailto:taras.ole9@gmail.com?subject=Chipaa",
 }
 

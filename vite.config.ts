@@ -3,9 +3,9 @@ import tailwindcss from "@tailwindcss/vite"
 import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
 
-// Se publica en GitHub Pages bajo /chipaa-web/.
+// Se publica en GitHub Pages con el dominio propio chipaa.club (public/CNAME).
 export default defineConfig({
-  base: "/chipaa-web/",
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: { "@": path.resolve(import.meta.dirname, "./src") },
