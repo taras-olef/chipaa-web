@@ -25,6 +25,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img { display: block; max-width: 100%; }
+html, body { overflow-x: clip; }
+/* En rejilla, un hijo no puede ser más ancho que su columna (si no, el móvil se desborda). */
+.hero > *, .features__grid > *, .spotlight > *, .benefits > *, .footer__inner > * { min-width: 0; }
 a { color: inherit; }
 h1, h2, h3 { margin: 0; letter-spacing: -0.02em; }
 
@@ -211,6 +214,10 @@ details a { color: var(--cinnamon); }
   .nav__stores [data-store="android"] { display: none; }
   .hero { padding-bottom: 72px; }
   .hero__media { height: 440px; }
+  .phone--back { left: 0; }
+  .phone--front { right: 0; }
+  .chip--ship { left: 4px; top: 12px; }
+  .chip--price { right: 4px; top: 70px; }
   .phone { width: 200px; border-radius: 32px; padding: 7px; }
   .phone img { border-radius: 26px; }
   .phone--flat { width: 250px; }
