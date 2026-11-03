@@ -2,8 +2,14 @@
 
 Página de la app Chipaa: busca un producto en varias tiendas y te enseña las ofertas ordenadas por precio total, con el envío incluido.
 
-HTML, CSS y JS sin dependencias, publicada con GitHub Pages en https://taras-olef.github.io/chipaa-web/
+- **Stack**: Vite + React + Tailwind 4 + componentes de [shadcn/ui](https://ui.shadcn.com) (estilo `base-nova`, sobre Base UI): botón, tarjeta, acordeón, carrusel, panel lateral, etiqueta y separador.
+- **MCP de shadcn**: configurado en `.mcp.json` (`npx shadcn@latest mcp`). Al abrir el repo con Claude Code, el asistente puede buscar y añadir componentes del registro.
+- **Publicación**: GitHub Actions (`.github/workflows/pages.yml`) compila y sube `dist/` a GitHub Pages en cada push a `main`: https://taras-olef.github.io/chipaa-web/
+- **Colores**: los de la app (`src/index.css`, tema de shadcn con los tokens de Chipaa).
+- **Tiendas**: cuando las apps estén publicadas, rellenar `storeLinks` en `src/site.ts`.
+- **Legal y soporte**: https://taras-olef.github.io/chipaa/
 
-- Capturas de la app en `img/` (demo de Android, barra de estado limpia).
-- Enlaces de las tiendas: `storeLinks` en `main.js`, cuando la app esté publicada.
-- Legal y soporte: https://taras-olef.github.io/chipaa/
+```bash
+npm install
+npm run dev
+```
